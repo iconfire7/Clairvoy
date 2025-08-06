@@ -1,6 +1,6 @@
-# vault-cli
+# clairvoy
 
-**Vault CLI** — безопасный менеджер секретов в терминале с поддержкой множественных пользователей и категориями (`account`, `api_key`, `ssh`, `gpg`, `note`).
+**Clairvoy** — безопасный менеджер секретов в терминале с поддержкой множественных пользователей и категориями (`account`, `api_key`, `ssh`, `gpg`, `note`).
 
 ## Особенности
 
@@ -19,8 +19,8 @@
 
 1. Склонируйте и перейдите в репозиторий:
    ```bash
-   git clone https://github.com/yourusername/vault-cli.git
-   cd vault-cli
+   git clone https://github.com/iconfire7/clairvoy.git
+   cd clairvoy
 
 2. Соберите и установите бинарь:
 
@@ -33,11 +33,11 @@ source ~/.bashrc
 
 ## Зарегистрировать пользователя user
 ```bash
-vault-cli register $user
+clairvoy register $user
 ```
 ## Добавить пароль
 ```bash
-vault-cli add
+clairvoy add
 
 → Type: account
 → Label: github
@@ -46,15 +46,15 @@ vault-cli add
 ```
 ## Вывести список
 ```bash
-vault-cli list
+clairvoy list
 ```
 
 ## Расшифровать секрет
 ```bash
-vault-cli get github
+clairvoy get github
 ```
 
 ## Удалить секрет
 ```bash
-vault-cli remove github
+clairvoy remove github
 ```
