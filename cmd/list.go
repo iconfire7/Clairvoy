@@ -36,7 +36,7 @@ var listCmd = &cobra.Command{
 			return
 		}
 		for _, e := range entries {
-			fmt.Printf("- %s (%s) added %s id=%s",
+			fmt.Printf("- %s (%s) added %s id=%s\n",
 				e.Label, e.Type, e.Created.Format(time.RFC3339), e.ID)
 		}
 	},
